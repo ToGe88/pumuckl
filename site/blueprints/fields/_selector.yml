@@ -1,0 +1,11 @@
+label: 
+	en: Header Image
+	de: Header Image
+
+type: selector
+
+mode: single
+
+types:
+  - all
+

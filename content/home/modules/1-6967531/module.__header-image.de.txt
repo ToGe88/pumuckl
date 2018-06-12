@@ -1,0 +1,33 @@
+Tab1: 
+
+----
+
+Infogeneral: 
+
+----
+
+Title: Header Image
+
+----
+
+Url-key: 
+
+----
+
+Tab2: 
+
+----
+
+Hero: _mg_0128.jpg
+
+----
+
+Text: 
+
+----
+
+Gallery: 
+
+----
+
+Format: single

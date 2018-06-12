@@ -1,0 +1,8 @@
+label: 
+	en: Children Pages
+	de: Unterseiten
+type: subpagelist
+filter:
+  filterBy: intendedTemplate
+  filterMethod: !=
+  filterValue: modules

@@ -1,0 +1,7 @@
+label:
+  en: Viewer Restriction
+  de: Viewer Restriction
+type: switch
+texts: 
+  - Nur für eingeloggte User
+  - Für alle sichtbar

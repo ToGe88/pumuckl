@@ -1,0 +1,9 @@
+title: Products
+pages: 
+  template: product-group
+files: false
+fields:
+  default: __default
+  
+  siblings: __subpages
+    

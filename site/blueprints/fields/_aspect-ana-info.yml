@@ -1,0 +1,83 @@
+type: group
+fields:
+  line2: 
+    label:
+      en: Project Info
+      de: Projekt-Info
+    type: line
+
+  category:
+    label:
+      en: Category
+      de: Category
+    type: select
+    options:
+      web: Web
+      analogue: Analog
+
+  year:
+    extends: _text
+    width: 1/1
+    label: 
+      en: Year
+      de: Jahr
+
+  involvements:
+    label: 
+      en: Related Pages
+      de: Verwandte Seiten
+
+    type: multiselect
+    options: query
+    query:
+      fetch: pages
+      template: involvement-analogue
+      text: '{{title}}'
+
+  partners:
+    extends: _multiselect
+    label: 
+      en: Partners
+      de: Partner
+    options: query
+    query:
+      page: partner
+      fetch: children
+
+  tags: _tags
+
+  skills: 
+    extends: _tags
+    label: 
+      en: Skills
+      de: Skills
+    width: 1/2
+
+  awards:
+    label: 
+      en: Awards
+      de: Awards
+    type: structure
+    entry:
+      - award
+      - type
+    fields:
+      award:
+        label: 
+          en: Award
+          de: Award
+        extends: _multiselect
+        options: query
+        query:
+          page: wettbewerbe
+          fetch: children
+        width: 1/1
+      type:
+        label: Type
+        extends: _text
+
+  domcolor: 
+    label: 
+      en: Dominant Color
+      de: Dominant Color
+    type: color

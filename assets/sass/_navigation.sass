@@ -1,0 +1,139 @@
+header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9999
+	background: $white
+
+.menu
+	position: fixed
+	bottom: -100%
+	left: 0
+	right: 0
+	background: $white
+	height: 100vh
+	padding: 10vh 20px 20px 20vh
+	z-index: 9998
+	transition: all .8s cubic-bezier(0.925, 0.005, 0.680, 1)
+
+	&.active
+		bottom: 0
+
+header.nav-up
+	& .header-typo--top
+		// background: $white
+		height: 8vh
+
+	& .header-typo--top, & .header-typo--left
+		font-size: 6vh
+
+	& .header-typo__item
+		width: 8vh
+		height: 8vh
+		line-height: 8vh
+
+.header-typo--left
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	width: 10vh
+	z-index: 9999
+	font-size: 8vh
+	text-align: center
+
+	.header-typo--t
+		position: absolute
+		top: 0
+		left: 0
+
+	.header-typo--g
+		position: absolute
+		bottom: 0
+		left: 0
+
+.header-typo--top
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	height: 10vh
+	z-index: 9998
+	font-size: 8vh
+	mix-blend-mode: overlay
+
+	.header-typo--v
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+
+	.header-typo--k
+		position: absolute
+		top: 0
+		right: 20px
+
+.header-typo__item
+	width: 10vh
+	height: 10vh
+	line-height: 10vh
+	text-align: center
+
+	// -webkit-text-stroke: 2px $black
+	// -webkit-text-fill-color: transparent
+	transition: all .3s ease
+
+.menu-toggle
+	position: absolute
+	top: 50%
+	left: 50%
+	height: 20px
+	width: 30px
+	transform: translate(-50%, -50%) rotate(-90deg)
+	cursor: pointer
+
+	& .toggle-line
+		width: 30px
+		height: 3px
+		position: absolute
+		background: black
+		background-blend-mode: overlay
+		transition: all .3s ease-out
+
+		&.line-first
+			top: 0
+			left: 0
+			transform-origin: bottom right
+
+		&.line-second
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+
+		&.line-third
+			bottom: 0
+			left: 0
+			transform-origin: top right
+
+	&.active > .line-first
+		transform: rotate(-35deg)
+
+	&.active > .line-second
+		transform: translateX(-50%)
+		opacity: 0
+
+	&.active > .line-third
+		transform: rotate(35deg)
+
+.languages-item
+	padding: 0
+	list-style-type: none
+	text-align: center
+	background: $white
+	border: 1px solid $black
+	transition: all .3s ease
+
+	&.is-active, &:hover
+		background: $black
+		color: $white

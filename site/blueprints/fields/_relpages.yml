@@ -1,0 +1,11 @@
+label: 
+  en: Related Pages
+  de: Verwandte Seiten
+
+type: relationship
+options: query
+query:
+  fetch: pages
+  template: aspect
+  flip: true
+search: true

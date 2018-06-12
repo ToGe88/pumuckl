@@ -1,0 +1,16 @@
+type: group
+fields:
+  items:
+    label: 
+      en: Related Pages
+      de: Verwandte Seiten
+
+    type: relationship
+    options: query
+    query:
+      fetch: pages
+      template: 
+        - product
+      flip: true
+    search: true
+      # template: involvement-web

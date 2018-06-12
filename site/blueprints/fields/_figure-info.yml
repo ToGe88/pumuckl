@@ -1,0 +1,15 @@
+type: group
+
+fields: 
+
+  alt: 
+    extends: _text
+    label: 
+      en: Alt-Text
+      de: Alt-Text
+
+  caption: 
+    extends: _text
+    label: 
+      en: Caption
+      de: Caption

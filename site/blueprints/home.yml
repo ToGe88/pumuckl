@@ -1,0 +1,7 @@
+title: Home
+pages: true
+files: false
+fields:
+  default: __default
+
+  modules: _modules

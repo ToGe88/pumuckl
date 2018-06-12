@@ -1,0 +1,25 @@
+type: group
+fields:
+  line2: 
+    label:
+      en: Project Info
+      de: Projekt-Info
+    type: line
+
+  clients: 
+    label: 
+      en: Client
+      de: Kunde
+    extends: _multiselect
+    options: query
+    query:
+      page: kunden
+      fetch: children
+    width: 1/2
+
+  intro: 
+    extends: _text
+    label:
+      en: Intro
+      de: Intro
+    width: 1/2

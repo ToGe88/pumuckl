@@ -1,0 +1,17 @@
+Title: Pumuckl Rost 100ml
+
+----
+
+Text: Das ist die 100ml-Flasche. Geil.
+
+----
+
+Size: 100ml
+
+----
+
+Count: 10
+
+----
+
+Price: 10

@@ -1,0 +1,8 @@
+label: 
+	en: Multiselect Field
+	de: Multiselect Feld
+type: multiselect
+options: query
+query:
+	page: projects
+width: 1/2

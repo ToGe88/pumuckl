@@ -1,0 +1,21 @@
+title: MODUL >>> Item Overview
+
+pages: false
+
+files:
+
+  fields: 
+    figureInfo: _figure-info
+
+fields:
+
+  default: __default
+  
+  tab2:
+    label: 
+      en: Items
+      de: Artikel
+    type: tabs
+
+  items: _item-select
+

@@ -1,0 +1,19 @@
+title: Modules
+
+pages: 
+  template:
+    - module.__text
+    - module.__statement
+    - module.__item-overview
+    - module.__header-image
+    
+
+files: false
+fields:
+  title: 
+    extends: _title
+    readonly: true
+  URL-Key: _urlkey
+  modules: _modules
+options: 
+  deletable: false

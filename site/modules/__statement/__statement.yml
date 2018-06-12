@@ -1,0 +1,50 @@
+title: MODUL >>> Statement
+
+pages: false
+
+fields:
+
+  generalInfo: 
+    extends: _general-info
+
+  tab2:
+    label:
+      en: Content
+      de: Content
+    type: tabs
+
+  statements:
+    extends: _structure
+    label: 
+      en: Statements
+      de: Statements
+    entry: >
+      <strong>{{statementtext}}</strong>, {{statementauthor}}
+      </br>{{statementimage}}
+    fields:
+      statementText:
+        extends: _text
+        label: 
+          en: Statement Text
+          de: Statement Text
+        required: true
+      statementAuthor:
+        extends: _text
+        label: 
+          en: Statement Author
+          de: Statement Autor
+      statementImage:
+        extends: _selector
+        label: 
+          en: Statement Image
+          de: Statement Bild
+
+  tab3:
+    label: 
+      en: Module Layout
+      de: Modul-Layout
+    type: tabs
+
+  moduleLayout: _module-layout
+
+  

@@ -1,0 +1,5 @@
+title: Page
+pages: true
+files: true
+fields:
+  default: __default

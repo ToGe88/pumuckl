@@ -1,0 +1,7 @@
+type: group
+fields:
+  gallery: 
+    label: 
+    	en: Gallery
+    	de: Gallerie
+    type: gallery

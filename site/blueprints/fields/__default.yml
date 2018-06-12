@@ -1,0 +1,5 @@
+type: group
+fields:
+  title: _title
+
+  text: _textarea

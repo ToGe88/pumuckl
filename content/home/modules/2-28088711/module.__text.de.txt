@@ -1,0 +1,73 @@
+Tab1: 
+
+----
+
+Line1: 
+
+----
+
+Translations: 
+
+----
+
+Restricted: 
+
+----
+
+Title: Text 01
+
+----
+
+Url-key: 
+
+----
+
+Headline: 
+
+----
+
+Description: 
+
+----
+
+Socialimage: 
+
+----
+
+Text: Das ist mein Text Lorem Ipsum
+
+----
+
+Tab3: 
+
+----
+
+Infolayout: 
+
+----
+
+Start: 1
+
+----
+
+End: 13
+
+----
+
+Paddingtop: 0
+
+----
+
+Paddingbottom: 0
+
+----
+
+Push: false
+
+----
+
+Moduleheight: 0
+
+----
+
+Backgroundcolor: 

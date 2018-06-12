@@ -1,0 +1,14 @@
+label: 
+  en: Background Color
+  de: Background Color
+
+type: select
+
+width: 1/1
+
+options:
+  primary: Primary
+  black: Black
+  white: White
+  light-grey: Light Grey
+  middle-grey: Middle Grey

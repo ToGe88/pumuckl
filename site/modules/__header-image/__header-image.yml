@@ -1,0 +1,27 @@
+title: MODUL >>> Header-Image
+
+pages: false
+
+files:
+
+  fields: 
+
+    alt: 
+      extends: _text
+      label: 
+        en: Alt-Text
+        de: Alt-Text
+    grayscale:
+      label: 
+        en: Grayscale?
+        de: Graustufen?
+      type: toggle
+      text: yes/no
+      default: no
+
+fields:
+
+  default: __default
+
+  hero:
+    extends: _select

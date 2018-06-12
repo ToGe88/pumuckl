@@ -1,0 +1,20 @@
+type: group
+fields:
+
+  imagefield:
+    label: The image that the annotator field will use
+    type: image
+  annotatorfield:
+    label: Field label
+    type: imageannotator
+    src: imagefield
+    fields: 
+      markerid:
+        type: hidden
+      x:
+        type: hidden
+      y:
+        type: hidden
+      customfield:
+        label: Note
+        type: text

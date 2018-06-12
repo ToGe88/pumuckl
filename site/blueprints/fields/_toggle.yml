@@ -1,0 +1,6 @@
+label:
+  en: Toggle
+  de: Toggle
+type: toggle
+default: yes
+text: yes/no

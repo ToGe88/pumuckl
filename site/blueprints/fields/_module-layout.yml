@@ -1,0 +1,68 @@
+type: group
+fields:  
+
+  infoLayout:
+    label: 
+      en: Module Layout
+      de: Modul-Layout
+    type: info
+    text: >
+      In diesem Tab werden die Eigenschaften für das Layout und die Abstönde eingestellt.
+
+  start: 
+    extends: _text
+    label:
+      en: Start At
+      de: Beginn von
+    width: 1/2
+    default: 1
+
+  end: 
+    extends: _text
+    label: 
+      en: End At
+      de: Ende bei
+    width: 1/2
+    default: 13
+
+  paddingTop:
+    extends: _range
+    min: 0
+    max: 3
+    postfix: "-fach"
+    width: 1/2
+    label: 
+      en: Padding Top of the Module
+      de: Abstand oben für das Modul
+
+  paddingBottom:
+    extends: _range
+    min: 0
+    max: 3
+    postfix: "-fach"
+    width: 1/2
+    label: 
+      en: Padding Bottom of the Module
+      de: Abstand unten für das Modul
+
+  push:
+    label:
+      en: Push to the right
+      de: Nach rechts laufen lassen?
+    type: toggle
+    text: yes/no
+    default: no
+
+  moduleHeight:
+    extends: _range
+    min: 0
+    max: 10
+    default: 0
+    postfix: " vh's"
+    width: 1/1
+    label: 
+      en: Height of the Module
+      de: Höhe des Moduls
+
+  backgroundColor:
+    extends: _colorlist

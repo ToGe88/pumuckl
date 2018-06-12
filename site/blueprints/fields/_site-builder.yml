@@ -1,0 +1,9 @@
+type: group
+fields:
+  tab2:
+    extends: _tabs
+    label:
+      en: Modules
+      de: Seitenaufbau
+  
+  modules: _modules

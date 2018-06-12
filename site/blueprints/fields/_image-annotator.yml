@@ -1,0 +1,31 @@
+type: group
+
+fields:
+
+  annotatorImage:
+    extends: _selector
+    label: 
+      en: Reference Image
+      de: Referenz-Bild
+    
+  annotatorField:
+    label: 
+      en: Image Annotator
+      de: Image Annotator
+    type: imageannotator
+    src: annotatorImage
+    fields: 
+      markerid:
+        type: hidden
+        readonly: true
+      x:
+        type: hidden
+        readonly: true
+      y:
+        type: hidden
+        readonly: true
+      note:
+        label: 
+          en: Note
+          de: Eintrag
+        type: text

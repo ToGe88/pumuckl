@@ -1,0 +1,627 @@
+/* HEADER IMAGES */
+.header-image__wrapper
+	background: blue
+
+	.header-image__holder 
+		
+
+		& > figure
+			display: inline-block
+			position: relative
+			height: 100vh
+			width: 100%
+			overflow: hidden
+			margin: 0
+
+			& img
+				object-fit: cover
+
+/* ITEM OVERVIEW */
+.item-overview__wrapper
+	// padding: 100px 80px !important
+
+	.item-overview__title
+		padding-bottom: 40px
+
+	.item-overview__item
+		padding: 0 0 28px 40px
+
+		& .item-overview__item__description
+			position: absolute
+			left: 0
+			bottom: 0
+			z-index: 2000
+			transition: all .3s ease-out
+
+			& h1
+				@extend h1
+				
+
+			& a
+				display: none
+				transition: all .3s ease-out
+
+		
+
+/* GALLERY */
+.gallery__holder
+	// padding: 100px 80px
+
+.canvas__holder canvas
+	max-width: 100%
+
+.isogrid__wrapper
+	overflow: hidden
+
+.isogrid__content
+	transition: all .5s ease-out
+	transform-style: preserve-3d
+
+	&.twisted
+		transform: translateX(0) translateY(0) rotateX(50deg) rotateZ(45deg)
+
+		& .isogrid__item
+
+			&:hover
+				transform: translateZ(30px)
+
+.isogrid__item
+	width: 25% 
+	padding: 10px
+	float: left
+	transition: all .5s ease-out
+	
+	& figure 
+		background: $white
+		box-shadow: 5px 5px 10px 0 $light-grey
+
+		&:before, &:after 
+			position: absolute
+			transform-origin: bottom left
+			content: ''
+		
+		&:before 
+			top: 0 
+			right: -4px 
+			bottom: 0
+			width: 4px
+			background: $black
+			transform: skewY(45deg)
+		
+		&:after 
+			right: -4px 
+			bottom: -4px
+			left: 4px
+			height: 4px
+			background: $middle-grey
+			transform: skewX(45deg)
+
+	&:hover
+
+		& figcaption
+			opacity: 1
+			transform: translateY(0)
+
+	& figcaption
+		transition: all .3s ease-out
+		position: relative
+		opacity: 0
+		transform: translateY(50%)
+
+/* DEVICES */
+.devices__holder
+	display: block
+	height: 100%
+
+.device__holder
+	position: absolute
+
+.device__pin
+	padding: 10px
+	background: $black
+	color: $white
+	max-width: 200px
+	z-index: 2000
+
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -10px
+		border-left: 10px solid transparent
+		border-right: 10px solid transparent
+		border-top: 10px solid $black
+
+.laptop 
+	width: 100%
+	max-width: 1280px
+	min-width: 50px
+	margin: 0 auto
+
+
+.laptop__display 
+	position: relative
+	width: 86%
+	margin: 0 auto
+	border: 2px solid $black
+	background: #fafafa
+	padding: 70px 40px 40px 40px
+	border-top-left-radius: 20px
+	border-top-right-radius: 20px
+
+.laptop__display::before 
+	content: ''
+	display: block
+	position: absolute
+	top: 30px
+	left: 50%
+	width: 15px
+	height: 15px
+	-webkit-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)
+	border-radius: 50px
+	background: #333
+
+.laptop__figure 
+	width: 100%
+	height: 0
+	margin: auto
+	padding-bottom: 62.5%
+	overflow: auto
+	position: relative
+
+.laptop__figure img 
+	position: absolute
+	width: 100%
+	left: 0
+	top: 0
+	right: 0
+
+.laptop__body 
+	position: relative
+	width: 100%
+	height: 35px
+	border: 2px solid $black
+	position: relative
+	top: -2px
+	border-bottom-left-radius: 40px 20px
+	border-bottom-right-radius: 40px 20px
+
+.laptop__body::before 
+	content: ''
+	position: absolute
+	width: 20%
+	height: 50%
+	top: -2px
+	left: 50%
+	-webkit-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)
+	background: transparent
+	border: 2px solid #333
+	border-bottom-left-radius: 40px 20px
+	border-bottom-right-radius: 40px 20px
+
+.tablet 
+	width: 100%
+	min-width: 50px
+	position: relative
+	border: 2px solid #333
+	border-radius: 30px
+	padding: 30px 70px
+
+.tablet::before 
+	content: ''
+	position: absolute
+	top: 50%
+	right: 30px
+	-webkit-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+	width: 10px
+	height: 10px
+	border-radius: 5px
+	background: #333
+
+.tablet::after 
+	content: ''
+	display: block
+	position: absolute
+	top: 50%
+	left: 25px
+	-webkit-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+	width: 30px
+	height: 30px
+	border-radius: 30px
+	border: 2px solid #333
+
+
+.tablet__figure 
+	width: 100%
+	height: 0
+	padding-bottom: 75%
+	overflow: auto
+
+	.device__image__holder
+		margin-bottom: -75%
+
+.tablet__figure img 
+	width: 100%
+
+.tablet-portrait 
+	width: 100%
+	min-width: 50px
+	position: relative
+	border: 2px solid #333
+	border-radius: 30px
+	padding: 70px 30px 
+
+.tablet-portrait::before 
+	content: ''
+	position: absolute
+	left: 50%
+	top: 30px
+	-webkit-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+	width: 10px
+	height: 10px
+	border-radius: 5px
+	background: #333
+
+.tablet-portrait::after 
+	content: ''
+	display: block
+	position: absolute
+	left: 50%
+	bottom: 25px
+	-webkit-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)
+	width: 30px
+	height: 30px
+	border-radius: 30px
+	border: 2px solid #333
+
+
+.tablet-portrait__figure 
+	width: 100%
+	height: 0
+	padding-bottom: 100%
+	overflow: auto
+
+	.device__image__holder
+		margin-bottom: -100%
+
+.tablet-portrait__figure img 
+	width: 100%
+
+.mobile 
+	width: 100%
+	min-width: 50px
+	position: relative
+	border: 2px solid #333
+	border-radius: 30px
+	padding: 60px 30px 100px
+
+.mobile::before 
+	content: ''
+	position: absolute
+	top: 30px
+	left: 50%
+	-webkit-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)
+	width: 20%
+	height: 1.5%
+	border-radius: 100px
+	background: #333
+
+.mobile::after 
+	content: ''
+	display: block
+	position: absolute
+	bottom: 20px
+	left: 50%
+	-webkit-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)
+	width: 60px
+	height: 60px
+	border-radius: 100px
+	border: 2px solid #333
+
+
+.mobile__figure 
+	width: 100%
+	height: 0
+	padding-bottom: 150%
+	overflow: auto
+
+.mobile__figure img 
+	width: 100%
+	margin-bottom: -150%
+
+
+
+
+
+
+/* STATEMENTS */
+.statement__wrapper
+	background: $black
+	color: $white
+
+.statement__slide__content
+	position: relative
+
+.statement__text
+	float: left
+	width: calc((100% / 12) * 5)
+	vertical-align: middle
+	z-index: 2000
+	position: relative
+
+	blockquote p
+		font-size: 5vh
+		line-height: 0.9
+		text-align: left
+
+.statement__image 
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 0
+	// float: right
+	width: calc((100% / 12) * 8)
+	
+	& figure
+		height: 100%
+
+/* SKILLS */
+.skill
+
+	& .pizza-ul
+		display: none
+
+	& svg text
+		display: none
+
+	ul[data-pie-id] li:nth-child(1) 
+		color: $white
+
+	ul[data-pie-id] li:nth-child(2) 
+		color: $light-grey
+
+.skill.white
+	ul[data-pie-id] li:nth-child(2) 
+		color: $light-grey
+
+/* HEADERS */
+.aspect-header__holder
+	position: relative
+	display: block
+	height: 100%
+
+.project-header__text
+	width: calc((100vw / 12)*6)
+	z-index: 2000
+	position: absolute
+	top: 40vh
+	left: 10vw
+	transform: translateY(-50%)
+
+	& p
+		margin: 0
+
+.aspect-header__text
+	width: calc((100vw / 12)*6)
+	z-index: 2000
+	position: absolute
+	top: 40vh
+	right: 0
+	transform: translateY(-50%)
+
+	& p
+		margin: 0
+
+.aspect-header__image 
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	z-index: 0
+	// float: right
+	width: calc((100% / 12) * 9)
+	
+	& figure
+		height: 100%
+
+.project-header__holder
+	position: relative
+	display: block
+	height: 100%
+
+.project-header__tile 
+	position: absolute
+	transform-origin: center center
+	
+
+	&.project-header__tile--half
+		width: 100%
+		height: 100%
+		-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 0)
+		clip-path: url(#triangle--half)
+		animation: bgpos 20s infinite
+		
+		&:nth-child(2) 
+			transform: rotate(180deg)
+
+	&.project-header__tile--third
+
+		&:first-child
+			width: 100%
+			height: 100%
+			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 0)
+			clip-path: url(#triangle--half)
+			transform: rotate(180deg)
+			animation: bgpos 20s infinite
+		
+		&:nth-child(2)
+			top: 0
+			right: 0
+			width: 50%
+			height: 100%
+			-webkit-clip-path: polygon(100% 0,100% 100%, 0 50%, 100% 0)
+			clip-path: url(#triangle--quarter-vertical)
+			animation: bgpos 20s infinite
+
+		&:nth-child(3)
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 50%
+			-webkit-clip-path: polygon(0 100%,50% 0, 100% 100%, 0 100%)
+			clip-path: url(#triangle--quarter-horizontal)
+			animation: bgpostop 30s infinite
+
+	&.project-header__tile--quarter
+		
+		&:nth-child(1), &:nth-child(3)
+			top: 0
+			right: 0
+			width: 50%
+			height: 100%
+			-webkit-clip-path: polygon(100% 0,100% 100%, 0 50%, 100% 0)
+			clip-path: url(#triangle--quarter-vertical)
+			animation: bgpos 20s infinite
+
+		&:nth-child(2), &:nth-child(4)
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 50%
+			-webkit-clip-path: polygon(0 100%,50% 0, 100% 100%, 0 100%)
+			clip-path: url(#triangle--quarter-horizontal)
+			animation: bgpostop 30s infinite
+
+		&:nth-child(3), &:nth-child(4)
+			top: 0
+			left: 0
+			transform: rotate(180deg)
+
+.project-header__images 
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 0
+	opacity: .9
+
+/* RELPAGES */
+.relpages-slide
+	width: 40vw !important
+	position: relative !important
+	padding: 0
+
+	.relpage__content
+		position: relative
+
+		.relpage__text
+			width: calc((100% / 12) * 7)
+			position: relative
+			float: left			
+			z-index: 2000
+
+		.relpage__image
+			width: calc((100% / 12) * 6)
+			height: 100%
+			position: absolute
+			// display: inline-block
+			// float: right
+			bottom: 0
+			right: 0
+
+/* META */
+
+.involvements-items__content
+	display: flex
+
+.involvement-item
+	position: relative
+	width: 20%
+	margin-top: 30px
+	flex-grow: 1
+
+	& > .dot
+		width: 1px
+		height: 7px	
+		border-radius: 5px
+		background: $grey
+		position: absolute
+		top: -10px
+		left: 0
+		transform: translateY(-50%)
+		z-index: 10
+
+	& > .line
+		width: calc(100% - 8px)
+		height: 1px	
+		background: $grey
+		position: absolute
+		top: -10px
+		left: 4px
+		transform: translateY(-50%)
+
+	& h4
+		font: normal 1.2rem/1.6 'IBM Plex Mono', Helvetica, sans-serif
+		color: $grey
+
+	&--active
+
+		& > .dot, & > .line
+			background: $black
+
+		& > .line
+			height: 2px	
+
+		& h4
+			color: $black
+
+.inverted > .meta__content > section > div > .involvement-item > .dot,
+.inverted > .meta__content > section > div > .involvement-item > .line
+	background: $white
+	opacity: .5
+
+.inverted > .meta__content > section > div > .involvement-item--active > .dot,
+.inverted > .meta__content > section > div > .involvement-item--active > .line
+	background: $white
+	opacity: 1
+
+.inverted
+	color: $white
+
+	& .meta__content > section > div > .involvement-item > h4 
+		color: $white
+		opacity: .5
+
+	& .meta__content > section > div > .involvement-item--active > h4 
+		color: $white
+		opacity: 1
+
+
+/* ANIMATIONEN */
+// @keyframes bgpos 
+// 	0%,100% 
+// 		background-position: 0 0
+
+// 	50% 
+// 		background-position: 50% 0
+
+// @keyframes bgpostop
+// 	0%,100% 
+// 		background-position: 0 0
+
+// 	50% 
+// 		background-position: 0 50%
+
+
+
+
+

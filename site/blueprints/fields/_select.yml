@@ -1,0 +1,5 @@
+label: 
+	en: Select Field
+	de: Select Feld
+type: select
+options: files

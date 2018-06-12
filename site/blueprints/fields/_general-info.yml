@@ -1,0 +1,41 @@
+type: group
+fields:
+
+  tab1: 
+    extends: _tabs
+    label:
+      en: Information
+      de: Informationen
+
+  line1: 
+    label:
+      en: Preferences
+      de: Einstellungen
+    type: line
+
+  translations: _translations
+
+  restricted: 
+    extends: _switch
+
+  title: _title
+
+  URL-Key: _urlkey
+
+  headline: 
+    extends: _text
+    label: Headline
+
+  description:
+    extends: _text
+    label: Description
+
+  socialImage:
+    extends: _selector
+    label:
+      en: Image for Social Media
+      de: Bild für Social Media
+    mode: single
+    types:
+      - image
+    autoselect: first

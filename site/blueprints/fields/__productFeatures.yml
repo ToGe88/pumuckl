@@ -1,0 +1,14 @@
+type: group
+fields:
+  size: 
+    extends: _text
+    label: Größe
+    width: 1/1
+  price:
+    extends: _text
+    label: Preis
+    width: 1/1
+  count:
+    extends: _text
+    label: Vorrätige Menge
+    width: 1/1

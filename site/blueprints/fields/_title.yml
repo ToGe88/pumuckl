@@ -1,0 +1,11 @@
+label: 
+  en: Title
+  de: Titel
+
+type: text
+
+width: 1/2
+
+help: 
+  en: Type the title of the Page
+  de: Gib hier den Titel der Seite ein

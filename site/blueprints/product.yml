@@ -1,0 +1,8 @@
+title: Product
+pages: false
+files: true
+fields:
+  default: __default
+  
+  productFeatures: __productFeatures
+    
