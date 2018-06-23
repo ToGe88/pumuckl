@@ -344,23 +344,33 @@ header {
 .menu.active {
   bottom: 0;
 }
+/* line 23, ../sass/_navigation.sass */
+.menu .anchors__holder {
+  grid-column-start: 9;
+  grid-column-end: span line-13;
+}
+/* line 27, ../sass/_navigation.sass */
+.menu .anchors__holder .menu__item {
+  align-self: stretch;
+  background: blue;
+}
 
-/* line 24, ../sass/_navigation.sass */
+/* line 32, ../sass/_navigation.sass */
 header.nav-up .header-typo--top {
   height: 8vh;
 }
-/* line 28, ../sass/_navigation.sass */
+/* line 36, ../sass/_navigation.sass */
 header.nav-up .header-typo--top, header.nav-up .header-typo--left {
   font-size: 6vh;
 }
-/* line 31, ../sass/_navigation.sass */
+/* line 39, ../sass/_navigation.sass */
 header.nav-up .header-typo__item {
   width: 8vh;
   height: 8vh;
   line-height: 8vh;
 }
 
-/* line 36, ../sass/_navigation.sass */
+/* line 44, ../sass/_navigation.sass */
 .header-typo--left {
   position: fixed;
   left: 0;
@@ -371,20 +381,20 @@ header.nav-up .header-typo__item {
   font-size: 8vh;
   text-align: center;
 }
-/* line 46, ../sass/_navigation.sass */
+/* line 54, ../sass/_navigation.sass */
 .header-typo--left .header-typo--t {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 51, ../sass/_navigation.sass */
+/* line 59, ../sass/_navigation.sass */
 .header-typo--left .header-typo--g {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-/* line 56, ../sass/_navigation.sass */
+/* line 64, ../sass/_navigation.sass */
 .header-typo--top {
   position: fixed;
   left: 0;
@@ -395,21 +405,21 @@ header.nav-up .header-typo__item {
   font-size: 8vh;
   mix-blend-mode: overlay;
 }
-/* line 66, ../sass/_navigation.sass */
+/* line 74, ../sass/_navigation.sass */
 .header-typo--top .header-typo--v {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 72, ../sass/_navigation.sass */
+/* line 80, ../sass/_navigation.sass */
 .header-typo--top .header-typo--k {
   position: absolute;
   top: 0;
   right: 20px;
 }
 
-/* line 77, ../sass/_navigation.sass */
+/* line 85, ../sass/_navigation.sass */
 .header-typo__item {
   width: 10vh;
   height: 10vh;
@@ -418,7 +428,7 @@ header.nav-up .header-typo__item {
   transition: all 0.3s ease;
 }
 
-/* line 87, ../sass/_navigation.sass */
+/* line 95, ../sass/_navigation.sass */
 .menu-toggle {
   position: absolute;
   top: 50%;
@@ -428,7 +438,7 @@ header.nav-up .header-typo__item {
   transform: translate(-50%, -50%) rotate(-90deg);
   cursor: pointer;
 }
-/* line 96, ../sass/_navigation.sass */
+/* line 104, ../sass/_navigation.sass */
 .menu-toggle .toggle-line {
   width: 30px;
   height: 3px;
@@ -437,39 +447,39 @@ header.nav-up .header-typo__item {
   background-blend-mode: overlay;
   transition: all 0.3s ease-out;
 }
-/* line 104, ../sass/_navigation.sass */
+/* line 112, ../sass/_navigation.sass */
 .menu-toggle .toggle-line.line-first {
   top: 0;
   left: 0;
   transform-origin: bottom right;
 }
-/* line 109, ../sass/_navigation.sass */
+/* line 117, ../sass/_navigation.sass */
 .menu-toggle .toggle-line.line-second {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-/* line 114, ../sass/_navigation.sass */
+/* line 122, ../sass/_navigation.sass */
 .menu-toggle .toggle-line.line-third {
   bottom: 0;
   left: 0;
   transform-origin: top right;
 }
-/* line 119, ../sass/_navigation.sass */
+/* line 127, ../sass/_navigation.sass */
 .menu-toggle.active > .line-first {
   transform: rotate(-35deg);
 }
-/* line 122, ../sass/_navigation.sass */
+/* line 130, ../sass/_navigation.sass */
 .menu-toggle.active > .line-second {
   transform: translateX(-50%);
   opacity: 0;
 }
-/* line 126, ../sass/_navigation.sass */
+/* line 134, ../sass/_navigation.sass */
 .menu-toggle.active > .line-third {
   transform: rotate(35deg);
 }
 
-/* line 129, ../sass/_navigation.sass */
+/* line 137, ../sass/_navigation.sass */
 .languages-item {
   padding: 0;
   list-style-type: none;
@@ -478,7 +488,7 @@ header.nav-up .header-typo__item {
   border: 1px solid #1e1e1e;
   transition: all 0.3s ease;
 }
-/* line 137, ../sass/_navigation.sass */
+/* line 145, ../sass/_navigation.sass */
 .languages-item.is-active, .languages-item:hover {
   background: #1e1e1e;
   color: white;
