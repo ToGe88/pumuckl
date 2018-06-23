@@ -12,3 +12,7 @@ fields:
     extends: _text
     label: Vorrätige Menge
     width: 1/1
+  productImage:
+    extends: _selector
+    label: Anzeigebild
+    width: 1/1

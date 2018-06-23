@@ -36,7 +36,7 @@
 
 ?>
 
-<section id="<?= $m->slug() ?>" class="textarea__wrapper wrapper grid__item <?= 'grid--start-'.$columnStart ?> <?= 'grid--end-'.$columnEnd ?> <? e($pushClass, $pushClass) ?> <?= $sectionPaddingTop ?> <?= $sectionPaddingBottom ?> ">
+<section id="<?= $m->title()->lower() ?>" class="textarea__wrapper wrapper grid__item <?= 'grid--start-'.$columnStart ?> <?= 'grid--end-'.$columnEnd ?> <? e($pushClass, $pushClass) ?> <?= $sectionPaddingTop ?> <?= $sectionPaddingBottom ?> ">
     
 	<div class="textarea__holder padding-left--1x padding-right--1x">
 		<div class="textarea">
