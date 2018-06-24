@@ -2,7 +2,7 @@ Title: Pumuckl Rost 100ml
 
 ----
 
-Text: Das ist die 100ml-Flasche. Geil.
+Text: 100ml-Flasche für den Einstieg. Unsichtbar, geruchlos, ekelhaft.
 
 ----
 
@@ -22,4 +22,4 @@ Image: 19367578_498356867222705_5805012994807037952_n-2.jpg
 
 ----
 
-Productimage: 19367578_498356867222705_5805012994807037952_n-2.jpg
+Productimage: pum_mockup_flasche_100ml.jpg
