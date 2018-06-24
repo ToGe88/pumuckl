@@ -8,10 +8,6 @@
 
 <form method="post">
   <div>
-    <label for="username"><?= $page->username()->html() ?></label>
-    <input type="text" id="username" name="username">
-  </div>
-  <div>
     <label for="password"><?= $page->password()->html() ?></label>
     <input type="password" id="password" name="password">
   </div>
