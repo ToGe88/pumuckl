@@ -3,8 +3,8 @@
 <section id="<?= $m->title()->lower() ?>" class="item-overview__wrapper wrapper grid__wrapper grid--start-1 grid--end-13">
     <? snippet('admin/edit', ['i' => $m, 'type' => 'module']) ?>
 	<div class="item-overview__holder grid__holder">
-		<div class="item-overview__title grid--span-12">
-			<?= '<h3>'.$m->title().'</h3>' ?>
+		<div class="item-overview__title grid--span-2 grid--start-1">
+			<?= '<h5>'.$m->title().'</h5>' ?>
 		</div>
 		<? $items = New Pages; ?>
 		<? foreach($m->items()->split(',') as $item): ?>

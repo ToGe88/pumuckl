@@ -1,6 +1,6 @@
 <? $m = $module ?>
 
-<section class="header-image__wrapper wrapper">
+<section class="header-image__wrapper wrapper grid--span-12">
 	<div class="header-image__holder">
 		<? if($m->hero()->isNotEmpty()): ?>
 			<? if($m->hero()->toFile()->type() === 'image'): ?>

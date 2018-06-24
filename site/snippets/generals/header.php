@@ -18,9 +18,9 @@
 
 </head>
 <body class="ibm">
-	
-	<? snippet('generals/menu') ?>
-	
+	<header class="grid__wrapper">
+	 <? snippet('generals/menu') ?>
+	</header>
 	<!-- MAIN CONTENT -->
 	<main class="grid__wrapper">
 		<article class="grid__holder">

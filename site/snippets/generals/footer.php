@@ -1,68 +1,21 @@
 	</main>
-	<!-- JS -->
-  	<!-- <?= js(array('/assets/js/jquery-1.12.2.min.js','/assets/js/main.js', '/assets/js/jquery.flexslider-min.js', '/assets/js/jquerytypewriter.js', '/assets/js/waypoints/waypoints.js', '/assets/js/waypoints/inview.js', '/assets/js/waypoints/sticky.js')) ?> -->
-  	<?= js(array('/assets/js/jquery-1.12.2.min.js','/assets/js/main.js', '/assets/js/jquery.flexslider-min.js', '/assets/js/pizza.min.js', '/assets/js/snap.svg-min.js')) ?>
-  	<script>
-  // 		$(document).ready(function() {
-		//   $('.statement--slider').flexslider({
-		//     animation: "fade",
-		//     animationLoop: true,
-		//     after: function(){
-		//     	$('blockquote p').typewrite({
-		// 		    'delay': 100, //time in ms between each letter
-		// 		    'trim': true, // Trim the string to type (Default: false, does not trim)
-		// 		    'callback': null // if exists, called after all effects have finished
-		// 		});
-		//     },
-		//   });
-		// });
-		$(document).ready(function() {
-		  $('.slider').each(function (){
-		  	if($(this).data('carousel') == true) {
-		  		var carousel = 400;
-		  	} else {
-		  		var carousel = false;
-		  	};
-		  	console.log(carousel);
-		    var controlsToggle = $(this).data('controls');
-		    var navigationToggle = $(this).data('navigation');
-		    var customNavHolder = $(this).data('nav-holder');
-		    $(this).flexslider({
-		      animation: "slide",
-		      controlNav: controlsToggle,
-		      directionNav: navigationToggle,
-		      slideshow: true,
-		      itemWidth: carousel,
-		      itemMargin: 0,
-		      slideshowSpeed: 7000,
-		      // smoothHeight: true,
-		      controlsContainer: $(".custom-controls-container"),
-		      customDirectionNav: $(customNavHolder), 
-		    });
-		  });
 
-		});
-  	</script>
-  	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  	<script>
-	  	$('.isogrid__content').masonry({
-		  // options
-		  itemSelector: '.isogrid__item',
-		});
-	</script>
+  	<?= js(array('/assets/js/jquery-1.12.2.min.js','/assets/js/jquery.color.js', '/assets/js/jquery.flexslider-min.js')) ?>
+  	
+  	
 	<script>
-		$(document).ready(function(){
-			var toggleOptionTwisted = $('.isogrid__wrapper').find('.isogrid__toggle__option').data('value','twisted'),
-				isogridContent = $('.isogrid__wrapper').find('.isogrid__content');
+		var scroller = function() {
+			var scrollPosition = $(window).scrollTop();
+			var percentage = 100 * $(window).scrollTop() / ($(document).height() - $(window).height()) /100;
+			var bgColor = 'rgba(116, 72, 47, ' + (percentage) + ')';
+			console.log(bgColor);
+			$('body').css('background-color', bgColor);
+			// $('header').css('background-color', bgColor);
+		}
 
-			toggleOptionTwisted.click(function (){
-				$(this).toggleClass('active');
-				isogridContent.toggleClass('twisted');
-			})
-			$('.page-info__toggle').click(function () {
-				$(this).toggleClass('active');
-				$('#page-info').toggleClass('active');
-			});
+		scroller(); // call on load in case someone refreshes halway down the page or hits a hash link
+		$(window).on('scroll touchmove', function(){ // scroll for mouse/trackpad, touchmove for immediate touch response
+			scroller();
 		});
 		//Header Scroll
 		var didScroll;
@@ -103,10 +56,6 @@
 		  lastScrollTop = st;
 		}
 	</script>
-	<script>
-		$(document).ready(function(){
-			Pizza.init(document.body, {donut: true, donut_inner_ratio: 0.8, show_percent: false});
-		});
-	</script>
+	
 </body>
 </html>

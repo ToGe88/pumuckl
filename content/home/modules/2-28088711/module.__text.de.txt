@@ -14,7 +14,7 @@ Restricted:
 
 ----
 
-Title: About
+Title: Infos
 
 ----
 
@@ -34,7 +34,17 @@ Socialimage:
 
 ----
 
-Text: Das ist mein Text Lorem Ipsum
+Text: 
+
+Pumuckl ist ein kleiner Kobold, der bei Meister Eder in der Werkstatt lebt. Für andere ist er unsichtbar und nur Meister Eder kann ihn sehen. Wenn er denn mal sichtbar ist, stiftet er ziemliches Chaos. Soweit die Kindergeschichte.
+
+Angelehnt an diese Geschichte ist der Name für eine neuartige Tinte entstanden. Eine Tinte, die erst durchsichtig und vollkommen geruchlos ist. Nach Trocknung und unter Tageslicht entwickelt sich die Tinte und verfärbt sich in ein dunkles Braun. Je nach Sonneneinstrahlung sogar bis zu einem dunklen, silbrig glänzendem Grau. 
+
+Mit herkömmlichen Mitteln wird man diese Tinte nicht mehr aus der Oberfläche bekommen, da sich die reaktive Substanz in der Tinte direkt in das Material einlagert. Da hilft nur abschleifen, oder wegschmeißen. Ich werde an dieser Stelle nicht darauf eingehen, was für offensichtliche Vorteile für den Nutzer daraus entstehen.
+
+Anders als bisherige Derivate wie »Stealth Ink«, oder »Magic Ink« ist diese Tinte basierend auf Wasser. Sie ist daher vollkommen geruchlos und für den Laien nicht wahrnehmbar. 
+
+**Probier' es aus, frei nach dem Motto nach dem der Kobold lebte: Erst unsichtbar, dann nervt's!**
 
 ----
 

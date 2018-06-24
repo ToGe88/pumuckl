@@ -1,5 +1,13 @@
+main.grid__wrapper {
+	padding: 0;
+}
+
+header.grid__wrapper {
+	padding: 20px 40px;
+}
+
 .grid__wrapper {
-	
+	padding: 40px;
 }
 
 .grid__holder {

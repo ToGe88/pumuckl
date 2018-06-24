@@ -1,4 +1,4 @@
-<article class="item-overview__item grid__item grid--span-13 align-self--center grid--height-20vh">
+<article class="item-overview__item grid__item grid--span-10 align-self--center grid--height-20vh">
 	<? $heightClass = 'grid--height-20vh' ?>
     <? if($item->productImage()->isNotEmpty()): ?>
 		<? snippet('images/figure', array('backgroundImage' => true, 'heightClass' => $heightClass, 'objectCover' => 'object-fit--cover','m' => $m, 'file' => $item->productImage()->toFile(), 'maxWidth' => 1000, 'maxHeight' => 2000, 'randWidth' => false)) ?>

@@ -1,7 +1,7 @@
 <div class="menu">
 	<div class="menu__holder grid__holder">
-		<div class="logo grid--span-3">
-			<img src="<?= $site->images()->first()->url() ?>" width="200" />
+		<div class="logo grid--span-2">
+			<img src="<?= $site->images()->first()->url() ?>" />
 		</div>
 		<div class="anchors__holder grid__holder grid--span-4 grid--end-13">
 			<? $menuItems = new Pages; ?>
