@@ -10,11 +10,11 @@ Size: 100ml
 
 ----
 
-Count: 10
+Count: 20
 
 ----
 
-Price: 10
+Price: 8
 
 ----
 

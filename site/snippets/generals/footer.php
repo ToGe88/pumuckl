@@ -1,13 +1,26 @@
 	</main>
-
+	<footer class="grid__holder">
+		<div class="grid--span-12">
+			<p>Kein Umtausch bei Nicht-Gefallen, nur bei defekter Ware. Kontakt nur per <a href="mailto:chemische.hintergruende@ok.de">Mail</a>.</p>
+		</div>
+	</footer>
   	<?= js(array('/assets/js/jquery-1.12.2.min.js','/assets/js/jquery.color.js', '/assets/js/jquery.flexslider-min.js')) ?>
   	
   	
 	<script>
+		// Smooth Scroll to Anchor
+		$(document).on('click', 'a[href^="#"]', function (event) {
+		    event.preventDefault();
+		    var headerHeight = $('header').height() + 40;
+		    $('html, body').animate({
+		        scrollTop: $($.attr(this, 'href')).offset().top - headerHeight
+		    }, 750);
+		});
+		// Scrolling Color Fade
 		var scroller = function() {
 			var scrollPosition = $(window).scrollTop();
 			var percentage = 100 * $(window).scrollTop() / ($(document).height() - $(window).height()) /100;
-			var bgColor = 'rgba(116, 72, 47, ' + (percentage) + ')';
+			var bgColor = 'rgba(125, 94, 77, ' + (percentage) + ')';
 			console.log(bgColor);
 			$('body').css('background-color', bgColor);
 			// $('header').css('background-color', bgColor);
@@ -17,6 +30,8 @@
 		$(window).on('scroll touchmove', function(){ // scroll for mouse/trackpad, touchmove for immediate touch response
 			scroller();
 		});
+
+
 		//Header Scroll
 		var didScroll;
 		var lastScrollTop = 0;

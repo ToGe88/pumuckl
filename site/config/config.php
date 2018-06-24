@@ -34,6 +34,30 @@ c::set('languages', array(
 ));
 
 c::set('debug', true);
+
+c::set('roles', array(
+  array(
+    'id'      => 'admin',
+    'name'    => 'Admin',
+    'default' => true,
+    'panel'   => true
+  ),
+  array(
+    'id'      => 'client',
+    'name'    => 'Client',
+    'panel'   => false
+  )
+));
+
+c::set('routes', array(
+  array(
+    'pattern' => 'logout',
+    'action'  => function() {
+      if($user = site()->user()) $user->logout();
+      go('login');
+    }
+  )
+));
 /*
 
 ---------------------------------------

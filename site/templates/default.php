@@ -1,3 +1,5 @@
+<?php if(!$site->user()) go('/login') ?>
+
 <?php snippet('generals/header') ?>
 
 <h1><?php echo $page->title()->html() ?></h1>

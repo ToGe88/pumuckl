@@ -1,3 +1,5 @@
+<?php if(!$site->user()) go('/login') ?>
+
 <?php snippet('generals/header') ?>
 
 <section class="textarea__wrapper wrapper grid__item grid--start-1 grid--end-13">

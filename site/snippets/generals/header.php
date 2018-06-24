@@ -11,7 +11,7 @@
   <!-- STYLING -->
   
   <?= css('/assets/css/grid.css') ?>
-  <?= css('/assets/css/ibm-type.css') ?>
+
   <?= css('/assets/css/main.css') ?>
   
   

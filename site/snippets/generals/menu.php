@@ -1,6 +1,6 @@
 <div class="menu">
 	<div class="menu__holder grid__holder">
-		<div class="logo grid--span-2">
+		<div class="logo grid--span-1">
 			<img src="<?= $site->images()->first()->url() ?>" />
 		</div>
 		<div class="anchors__holder grid__holder grid--span-4 grid--end-13">

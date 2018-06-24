@@ -6,6 +6,12 @@ header
 	z-index: 9999
 	background: $white
 
+	// &.nav-up
+	// 	background: transparent
+
+	// &.nav-down
+	// 	background: $white
+
 .menu
 
 	& .anchors__holder
@@ -13,9 +19,21 @@ header
 		grid-column-end: span line-13
 
 		& .menu__item
-			align-self: stretch
+			align-self: center
 			
 			& a
-				font: 400 3vh/1.2 'IBM Plex Sans', Helvetica, serif
+				font: 500 2vw/1.2 'IBM Plex Sans', Helvetica, serif
+
+				&:hover, &:focus
+					border-bottom: 2px solid black
+					padding-bottom: 10px
 
 
+footer
+	background: $black
+	color: $white
+	padding: 20px 40px
+
+	& p
+		font: 500 1.2vw/1.2 'IBM Plex Mono', Helvetica, serif
+		margin: 0
