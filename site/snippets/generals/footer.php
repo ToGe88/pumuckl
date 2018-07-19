@@ -1,7 +1,7 @@
 	</main>
 	<footer class="grid__holder">
 		<div class="grid--span-12">
-			<p>Kein Umtausch bei Nicht-Gefallen, nur bei defekter Ware. Kontakt nur per <a href="mailto:chemische.hintergruende@ok.de">Mail</a>.</p>
+			<p>Kein Umtausch bei Nicht-Gefallen, nur bei defekter Ware. Kontakt nur per <a href="mailto:pumuckl.ink@ok.de">Mail</a>.</p>
 		</div>
 	</footer>
   	<?= js(array('/assets/js/jquery-1.12.2.min.js','/assets/js/jquery.color.js', '/assets/js/jquery.flexslider-min.js')) ?>

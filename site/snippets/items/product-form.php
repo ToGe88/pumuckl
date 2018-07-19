@@ -2,7 +2,7 @@
 
   <!-- Identify your business so that you can collect the payments. -->
   <input type="hidden" name="lc" value="DE">
-  <input type="hidden" name="business" value="chemische.hintergruende@ok.de">
+  <input type="hidden" name="business" value="pumuckl.ink@ok.de">
 
   <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
   <input type="hidden" name="cmd" value="_cart">
