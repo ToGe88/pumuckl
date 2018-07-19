@@ -105,7 +105,7 @@ a.base-link {
 
 /* line 81, ../sass/_reset.sass */
 ::selection {
-  color: blue;
+  color: white;
   background: rgba(60, 60, 60, 0.5);
 }
 

@@ -9,7 +9,7 @@
   <meta name="description" content="<?= $site->description()->html() ?>">
 
   <!-- STYLING -->
-  
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700" rel="stylesheet">
   <?= css('/assets/css/grid.css') ?>
 
   <?= css('/assets/css/main.css') ?>
