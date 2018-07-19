@@ -129,87 +129,93 @@ img {
 
 /* line 1, ../sass/_headings.sass */
 h1 {
-  font: normal 5.4rem/1 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 5.4rem/1 "IBM Plex Sans", Helvetica, sans-serif !important;
   font-weight: 700;
   letter-spacing: 0.025em;
 }
 
 /* line 6, ../sass/_headings.sass */
 h2 {
-  font: normal 3.3rem/1.1 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 3.3rem/1.1 "IBM Plex Sans", Helvetica, sans-serif !important;
   margin-bottom: 25px;
   letter-spacing: 0.025em;
 }
 
 /* line 11, ../sass/_headings.sass */
 h3 {
-  font: normal 2rem/1.6 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 2rem/1.6 "IBM Plex Sans", Helvetica, sans-serif !important;
   letter-spacing: 0.01em;
 }
 
 /* line 15, ../sass/_headings.sass */
 h4 {
-  font: normal 2.2rem/1.1 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 2.2rem/1.1 "IBM Plex Sans", Helvetica, sans-serif !important;
 }
 
 /* line 18, ../sass/_headings.sass */
 h5, .item-overview__item h1 {
-  font: normal 1.7rem/1.6 "IBM Plex Mono", Helvetica, sans-serif;
+  font: normal 1.7rem/1.6 "IBM Plex Mono", Helvetica, sans-serif !important;
 }
 
-/* line 21, ../sass/_headings.sass */
+@media screen and (max-width: 600px) {
+  /* line 22, ../sass/_headings.sass */
+  h5, .item-overview__item h1 {
+    margin-bottom: 20px;
+  }
+}
+/* line 25, ../sass/_headings.sass */
 p {
   font: 500 5vw/1.2 "IBM Plex Sans", Times, serif;
   margin-bottom: 6vw;
 }
 
-/* line 25, ../sass/_headings.sass */
+/* line 29, ../sass/_headings.sass */
 strong {
   font: 600 5vw/1.2 "IBM Plex Sans", Times, serif;
 }
 
-/* line 28, ../sass/_headings.sass */
+/* line 32, ../sass/_headings.sass */
 em {
   font: italic 1.9rem/1.6 "IBM Plex Sans", Times, serif;
 }
 
-/* line 31, ../sass/_headings.sass */
+/* line 35, ../sass/_headings.sass */
 a {
   font: inherit;
 }
 
-/* line 34, ../sass/_headings.sass */
+/* line 38, ../sass/_headings.sass */
 blockquote p {
-  font: normal 5rem/1.3 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 5rem/1.3 "IBM Plex Sans", Helvetica, sans-serif !important;
 }
 
-/* line 38, ../sass/_headings.sass */
+/* line 42, ../sass/_headings.sass */
 cite p {
-  font: normal 2rem/1.3 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 2rem/1.3 "IBM Plex Sans", Helvetica, sans-serif !important;
   text-transform: uppercase;
 }
 
-/* line 44, ../sass/_headings.sass */
+/* line 48, ../sass/_headings.sass */
 ol li, ul li {
   padding-left: 40px;
-  font: normal 1.9rem/1.6 "IBM Plex Sans", Helvetica, sans-serif;
+  font: normal 1.9rem/1.6 "IBM Plex Sans", Helvetica, sans-serif !important;
   letter-spacing: 0.01em;
   list-style-position: inside;
 }
 
-/* line 51, ../sass/_headings.sass */
+/* line 55, ../sass/_headings.sass */
 ol li {
   list-style-type: decimal;
 }
 
-/* line 55, ../sass/_headings.sass */
+/* line 59, ../sass/_headings.sass */
 ul li {
   list-style-type: square;
 }
 
-/* line 58, ../sass/_headings.sass */
+/* line 62, ../sass/_headings.sass */
 input {
-  font: normal 2rem/1.6 "IBM Plex Mono", Helvetica, sans-serif;
+  font: normal 2rem/1.6 "IBM Plex Mono", Helvetica, sans-serif !important;
   letter-spacing: 0.01em;
   border: none;
   background: transparent;
@@ -218,7 +224,7 @@ input {
   margin-top: 10px;
   cursor: pointer;
 }
-/* line 68, ../sass/_headings.sass */
+/* line 72, ../sass/_headings.sass */
 input:hover {
   border: none;
   background: white;
@@ -226,13 +232,13 @@ input:hover {
   color: #1e1e1e !important;
 }
 
-/* line 74, ../sass/_headings.sass */
+/* line 78, ../sass/_headings.sass */
 input[type="password"] {
   display: block;
   width: 100%;
 }
 
-/* line 78, ../sass/_headings.sass */
+/* line 82, ../sass/_headings.sass */
 p.alert {
   font: 500 2rem/1.2 "IBM Plex Sans", Times, serif;
   color: red !important;
@@ -309,42 +315,49 @@ p.alert {
   padding-right: 40px;
 }
 
-/* line 46, ../sass/_wrappers.sass */
+@media screen and (max-width: 600px) {
+  /* line 47, ../sass/_wrappers.sass */
+  .padding-right--1x, .padding-left--1x {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+/* line 51, ../sass/_wrappers.sass */
 .padding-right--2x {
   padding-right: calc((100vw / 12)* 2);
 }
 
-/* line 49, ../sass/_wrappers.sass */
+/* line 54, ../sass/_wrappers.sass */
 .padding-right--3x {
   padding-right: calc((100vw / 12)* 3);
 }
 
-/* line 52, ../sass/_wrappers.sass */
+/* line 57, ../sass/_wrappers.sass */
 .margin-top--1x {
   margin-top: 5vh;
 }
 
-/* line 55, ../sass/_wrappers.sass */
+/* line 60, ../sass/_wrappers.sass */
 .margin-top--2x {
   margin-top: 10vh;
 }
 
-/* line 58, ../sass/_wrappers.sass */
+/* line 63, ../sass/_wrappers.sass */
 .margin-top--3x {
   margin-top: 15vh;
 }
 
-/* line 61, ../sass/_wrappers.sass */
+/* line 66, ../sass/_wrappers.sass */
 .margin-bottom--1x {
   margin-bottom: 5vh;
 }
 
-/* line 64, ../sass/_wrappers.sass */
+/* line 69, ../sass/_wrappers.sass */
 .margin-bottom--2x {
   margin-bottom: 10vh;
 }
 
-/* line 67, ../sass/_wrappers.sass */
+/* line 72, ../sass/_wrappers.sass */
 .margin-bottom--3x {
   margin-bottom: 15vh;
 }
@@ -365,30 +378,60 @@ header {
   grid-column-start: 9;
   grid-column-end: span line-13;
 }
-/* line 21, ../sass/_navigation.sass */
+@media screen and (max-width: 600px) {
+  /* line 22, ../sass/_navigation.sass */
+  .menu .anchors__holder {
+    grid-column-start: 6;
+  }
+}
+/* line 25, ../sass/_navigation.sass */
 .menu .anchors__holder .menu__item {
   align-self: center;
 }
-/* line 24, ../sass/_navigation.sass */
+/* line 28, ../sass/_navigation.sass */
 .menu .anchors__holder .menu__item a {
-  font: 500 2vw/1.2 "IBM Plex Sans", Helvetica, serif;
+  font: 500 2vw/1.2 "IBM Plex Sans", Helvetica, sans-serif !important;
 }
-/* line 27, ../sass/_navigation.sass */
+@media screen and (max-width: 600px) {
+  /* line 32, ../sass/_navigation.sass */
+  .menu .anchors__holder .menu__item a {
+    font: 500 16px/1.2 "IBM Plex Sans", Helvetica, sans-serif !important;
+  }
+}
+/* line 35, ../sass/_navigation.sass */
 .menu .anchors__holder .menu__item a:hover, .menu .anchors__holder .menu__item a:focus {
   border-bottom: 2px solid black;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 600px) {
+  /* line 40, ../sass/_navigation.sass */
+  .menu .anchors__holder .menu__item.grid--span-6 {
+    grid-column-end: span 6;
+  }
+}
 
-/* line 32, ../sass/_navigation.sass */
+/* line 45, ../sass/_navigation.sass */
 footer {
   background: #1e1e1e;
   color: white;
   padding: 20px 40px;
 }
-/* line 37, ../sass/_navigation.sass */
+/* line 50, ../sass/_navigation.sass */
 footer p {
-  font: 500 1.2vw/1.2 "IBM Plex Mono", Helvetica, serif;
+  font: 500 1.2vw/1.2 "IBM Plex Mono", Helvetica, sans-serif !important;
   margin: 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 55, ../sass/_navigation.sass */
+  footer p {
+    font: 500 16px/1.2 "IBM Plex Mono", Helvetica, sans-serif !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 59, ../sass/_navigation.sass */
+  footer {
+    padding: 20px 20px;
+  }
 }
 
 /* HEADER IMAGES */
@@ -396,7 +439,13 @@ footer p {
 .header-image__wrapper .header-image__holder {
   padding: 0 40px;
 }
-/* line 7, ../sass/_modules.sass */
+@media screen and (max-width: 600px) {
+  /* line 8, ../sass/_modules.sass */
+  .header-image__wrapper .header-image__holder {
+    padding: 0px;
+  }
+}
+/* line 11, ../sass/_modules.sass */
 .header-image__wrapper .header-image__holder > figure {
   display: inline-block;
   position: relative;
@@ -405,61 +454,57 @@ footer p {
   overflow: hidden;
   margin: 0;
 }
-/* line 15, ../sass/_modules.sass */
+/* line 19, ../sass/_modules.sass */
 .header-image__wrapper .header-image__holder > figure img {
   object-fit: cover;
+  height: 100%;
 }
 
 /* ITEM OVERVIEW */
-/* line 22, ../sass/_modules.sass */
-.item-overview__wrapper .item-overview__title {
-  padding-bottom: 40px;
-}
-
 /* GALLERY */
-/* line 36, ../sass/_modules.sass */
+/* line 41, ../sass/_modules.sass */
 .canvas__holder canvas {
   max-width: 100%;
 }
 
-/* line 39, ../sass/_modules.sass */
+/* line 44, ../sass/_modules.sass */
 .isogrid__wrapper {
   overflow: hidden;
 }
 
-/* line 42, ../sass/_modules.sass */
+/* line 47, ../sass/_modules.sass */
 .isogrid__content {
   transition: all 0.5s ease-out;
   transform-style: preserve-3d;
 }
-/* line 46, ../sass/_modules.sass */
+/* line 51, ../sass/_modules.sass */
 .isogrid__content.twisted {
   transform: translateX(0) translateY(0) rotateX(50deg) rotateZ(45deg);
 }
-/* line 51, ../sass/_modules.sass */
+/* line 56, ../sass/_modules.sass */
 .isogrid__content.twisted .isogrid__item:hover {
   transform: translateZ(30px);
 }
 
-/* line 54, ../sass/_modules.sass */
+/* line 59, ../sass/_modules.sass */
 .isogrid__item {
   width: 25%;
   padding: 10px;
   float: left;
   transition: all 0.5s ease-out;
 }
-/* line 60, ../sass/_modules.sass */
+/* line 65, ../sass/_modules.sass */
 .isogrid__item figure {
   background: white;
   box-shadow: 5px 5px 10px 0 #f0f0f0;
 }
-/* line 64, ../sass/_modules.sass */
+/* line 69, ../sass/_modules.sass */
 .isogrid__item figure:before, .isogrid__item figure:after {
   position: absolute;
   transform-origin: bottom left;
   content: "";
 }
-/* line 69, ../sass/_modules.sass */
+/* line 74, ../sass/_modules.sass */
 .isogrid__item figure:before {
   top: 0;
   right: -4px;
@@ -468,7 +513,7 @@ footer p {
   background: #1e1e1e;
   transform: skewY(45deg);
 }
-/* line 77, ../sass/_modules.sass */
+/* line 82, ../sass/_modules.sass */
 .isogrid__item figure:after {
   right: -4px;
   bottom: -4px;
@@ -477,12 +522,12 @@ footer p {
   background: #787878;
   transform: skewX(45deg);
 }
-/* line 87, ../sass/_modules.sass */
+/* line 92, ../sass/_modules.sass */
 .isogrid__item:hover figcaption {
   opacity: 1;
   transform: translateY(0);
 }
-/* line 91, ../sass/_modules.sass */
+/* line 96, ../sass/_modules.sass */
 .isogrid__item figcaption {
   transition: all 0.3s ease-out;
   position: relative;
@@ -491,18 +536,18 @@ footer p {
 }
 
 /* DEVICES */
-/* line 98, ../sass/_modules.sass */
+/* line 103, ../sass/_modules.sass */
 .devices__holder {
   display: block;
   height: 100%;
 }
 
-/* line 102, ../sass/_modules.sass */
+/* line 107, ../sass/_modules.sass */
 .device__holder {
   position: absolute;
 }
 
-/* line 105, ../sass/_modules.sass */
+/* line 110, ../sass/_modules.sass */
 .device__pin {
   padding: 10px;
   background: #1e1e1e;
@@ -510,7 +555,7 @@ footer p {
   max-width: 200px;
   z-index: 2000;
 }
-/* line 112, ../sass/_modules.sass */
+/* line 117, ../sass/_modules.sass */
 .device__pin::after {
   content: "";
   position: absolute;
@@ -521,7 +566,7 @@ footer p {
   border-top: 10px solid #1e1e1e;
 }
 
-/* line 121, ../sass/_modules.sass */
+/* line 126, ../sass/_modules.sass */
 .laptop {
   width: 100%;
   max-width: 1280px;
@@ -529,7 +574,7 @@ footer p {
   margin: 0 auto;
 }
 
-/* line 128, ../sass/_modules.sass */
+/* line 133, ../sass/_modules.sass */
 .laptop__display {
   position: relative;
   width: 86%;
@@ -541,7 +586,7 @@ footer p {
   border-top-right-radius: 20px;
 }
 
-/* line 138, ../sass/_modules.sass */
+/* line 143, ../sass/_modules.sass */
 .laptop__display::before {
   content: "";
   display: block;
@@ -556,7 +601,7 @@ footer p {
   background: #333;
 }
 
-/* line 151, ../sass/_modules.sass */
+/* line 156, ../sass/_modules.sass */
 .laptop__figure {
   width: 100%;
   height: 0;
@@ -566,7 +611,7 @@ footer p {
   position: relative;
 }
 
-/* line 159, ../sass/_modules.sass */
+/* line 164, ../sass/_modules.sass */
 .laptop__figure img {
   position: absolute;
   width: 100%;
@@ -575,7 +620,7 @@ footer p {
   right: 0;
 }
 
-/* line 166, ../sass/_modules.sass */
+/* line 171, ../sass/_modules.sass */
 .laptop__body {
   position: relative;
   width: 100%;
@@ -587,7 +632,7 @@ footer p {
   border-bottom-right-radius: 40px 20px;
 }
 
-/* line 176, ../sass/_modules.sass */
+/* line 181, ../sass/_modules.sass */
 .laptop__body::before {
   content: "";
   position: absolute;
@@ -603,7 +648,7 @@ footer p {
   border-bottom-right-radius: 40px 20px;
 }
 
-/* line 190, ../sass/_modules.sass */
+/* line 195, ../sass/_modules.sass */
 .tablet {
   width: 100%;
   min-width: 50px;
@@ -613,7 +658,7 @@ footer p {
   padding: 30px 70px;
 }
 
-/* line 198, ../sass/_modules.sass */
+/* line 203, ../sass/_modules.sass */
 .tablet::before {
   content: "";
   position: absolute;
@@ -627,7 +672,7 @@ footer p {
   background: #333;
 }
 
-/* line 210, ../sass/_modules.sass */
+/* line 215, ../sass/_modules.sass */
 .tablet::after {
   content: "";
   display: block;
@@ -642,24 +687,24 @@ footer p {
   border: 2px solid #333;
 }
 
-/* line 224, ../sass/_modules.sass */
+/* line 229, ../sass/_modules.sass */
 .tablet__figure {
   width: 100%;
   height: 0;
   padding-bottom: 75%;
   overflow: auto;
 }
-/* line 230, ../sass/_modules.sass */
+/* line 235, ../sass/_modules.sass */
 .tablet__figure .device__image__holder {
   margin-bottom: -75%;
 }
 
-/* line 233, ../sass/_modules.sass */
+/* line 238, ../sass/_modules.sass */
 .tablet__figure img {
   width: 100%;
 }
 
-/* line 236, ../sass/_modules.sass */
+/* line 241, ../sass/_modules.sass */
 .tablet-portrait {
   width: 100%;
   min-width: 50px;
@@ -669,7 +714,7 @@ footer p {
   padding: 70px 30px;
 }
 
-/* line 244, ../sass/_modules.sass */
+/* line 249, ../sass/_modules.sass */
 .tablet-portrait::before {
   content: "";
   position: absolute;
@@ -683,7 +728,7 @@ footer p {
   background: #333;
 }
 
-/* line 256, ../sass/_modules.sass */
+/* line 261, ../sass/_modules.sass */
 .tablet-portrait::after {
   content: "";
   display: block;
@@ -698,24 +743,24 @@ footer p {
   border: 2px solid #333;
 }
 
-/* line 270, ../sass/_modules.sass */
+/* line 275, ../sass/_modules.sass */
 .tablet-portrait__figure {
   width: 100%;
   height: 0;
   padding-bottom: 100%;
   overflow: auto;
 }
-/* line 276, ../sass/_modules.sass */
+/* line 281, ../sass/_modules.sass */
 .tablet-portrait__figure .device__image__holder {
   margin-bottom: -100%;
 }
 
-/* line 279, ../sass/_modules.sass */
+/* line 284, ../sass/_modules.sass */
 .tablet-portrait__figure img {
   width: 100%;
 }
 
-/* line 282, ../sass/_modules.sass */
+/* line 287, ../sass/_modules.sass */
 .mobile {
   width: 100%;
   min-width: 50px;
@@ -725,7 +770,7 @@ footer p {
   padding: 60px 30px 100px;
 }
 
-/* line 290, ../sass/_modules.sass */
+/* line 295, ../sass/_modules.sass */
 .mobile::before {
   content: "";
   position: absolute;
@@ -739,7 +784,7 @@ footer p {
   background: #333;
 }
 
-/* line 302, ../sass/_modules.sass */
+/* line 307, ../sass/_modules.sass */
 .mobile::after {
   content: "";
   display: block;
@@ -754,7 +799,7 @@ footer p {
   border: 2px solid #333;
 }
 
-/* line 316, ../sass/_modules.sass */
+/* line 321, ../sass/_modules.sass */
 .mobile__figure {
   width: 100%;
   height: 0;
@@ -762,25 +807,25 @@ footer p {
   overflow: auto;
 }
 
-/* line 322, ../sass/_modules.sass */
+/* line 327, ../sass/_modules.sass */
 .mobile__figure img {
   width: 100%;
   margin-bottom: -150%;
 }
 
 /* STATEMENTS */
-/* line 332, ../sass/_modules.sass */
+/* line 337, ../sass/_modules.sass */
 .statement__wrapper {
   background: #1e1e1e;
   color: white;
 }
 
-/* line 336, ../sass/_modules.sass */
+/* line 341, ../sass/_modules.sass */
 .statement__slide__content {
   position: relative;
 }
 
-/* line 339, ../sass/_modules.sass */
+/* line 344, ../sass/_modules.sass */
 .statement__text {
   float: left;
   width: calc((100% / 12) * 5);
@@ -788,14 +833,14 @@ footer p {
   z-index: 2000;
   position: relative;
 }
-/* line 346, ../sass/_modules.sass */
+/* line 351, ../sass/_modules.sass */
 .statement__text blockquote p {
   font-size: 5vh;
   line-height: 0.9;
   text-align: left;
 }
 
-/* line 351, ../sass/_modules.sass */
+/* line 356, ../sass/_modules.sass */
 .statement__image {
   position: absolute;
   top: 0;
@@ -803,43 +848,43 @@ footer p {
   z-index: 0;
   width: calc((100% / 12) * 8);
 }
-/* line 359, ../sass/_modules.sass */
+/* line 364, ../sass/_modules.sass */
 .statement__image figure {
   height: 100%;
 }
 
 /* SKILLS */
-/* line 365, ../sass/_modules.sass */
+/* line 370, ../sass/_modules.sass */
 .skill .pizza-ul {
   display: none;
 }
-/* line 368, ../sass/_modules.sass */
+/* line 373, ../sass/_modules.sass */
 .skill svg text {
   display: none;
 }
-/* line 371, ../sass/_modules.sass */
+/* line 376, ../sass/_modules.sass */
 .skill ul[data-pie-id] li:nth-child(1) {
   color: white;
 }
-/* line 374, ../sass/_modules.sass */
+/* line 379, ../sass/_modules.sass */
 .skill ul[data-pie-id] li:nth-child(2) {
   color: #f0f0f0;
 }
 
-/* line 378, ../sass/_modules.sass */
+/* line 383, ../sass/_modules.sass */
 .skill.white ul[data-pie-id] li:nth-child(2) {
   color: #f0f0f0;
 }
 
 /* HEADERS */
-/* line 382, ../sass/_modules.sass */
+/* line 387, ../sass/_modules.sass */
 .aspect-header__holder {
   position: relative;
   display: block;
   height: 100%;
 }
 
-/* line 387, ../sass/_modules.sass */
+/* line 392, ../sass/_modules.sass */
 .project-header__text {
   width: calc((100vw / 12)*6);
   z-index: 2000;
@@ -848,12 +893,12 @@ footer p {
   left: 10vw;
   transform: translateY(-50%);
 }
-/* line 395, ../sass/_modules.sass */
+/* line 400, ../sass/_modules.sass */
 .project-header__text p {
   margin: 0;
 }
 
-/* line 398, ../sass/_modules.sass */
+/* line 403, ../sass/_modules.sass */
 .aspect-header__text {
   width: calc((100vw / 12)*6);
   z-index: 2000;
@@ -862,12 +907,12 @@ footer p {
   right: 0;
   transform: translateY(-50%);
 }
-/* line 406, ../sass/_modules.sass */
+/* line 411, ../sass/_modules.sass */
 .aspect-header__text p {
   margin: 0;
 }
 
-/* line 409, ../sass/_modules.sass */
+/* line 414, ../sass/_modules.sass */
 .aspect-header__image {
   position: absolute;
   top: 0;
@@ -876,24 +921,24 @@ footer p {
   z-index: 0;
   width: calc((100% / 12) * 9);
 }
-/* line 418, ../sass/_modules.sass */
+/* line 423, ../sass/_modules.sass */
 .aspect-header__image figure {
   height: 100%;
 }
 
-/* line 421, ../sass/_modules.sass */
+/* line 426, ../sass/_modules.sass */
 .project-header__holder {
   position: relative;
   display: block;
   height: 100%;
 }
 
-/* line 426, ../sass/_modules.sass */
+/* line 431, ../sass/_modules.sass */
 .project-header__tile {
   position: absolute;
   transform-origin: center center;
 }
-/* line 431, ../sass/_modules.sass */
+/* line 436, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--half {
   width: 100%;
   height: 100%;
@@ -901,11 +946,11 @@ footer p {
   clip-path: url(#triangle--half);
   animation: bgpos 20s infinite;
 }
-/* line 438, ../sass/_modules.sass */
+/* line 443, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--half:nth-child(2) {
   transform: rotate(180deg);
 }
-/* line 443, ../sass/_modules.sass */
+/* line 448, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--third:first-child {
   width: 100%;
   height: 100%;
@@ -914,7 +959,7 @@ footer p {
   transform: rotate(180deg);
   animation: bgpos 20s infinite;
 }
-/* line 451, ../sass/_modules.sass */
+/* line 456, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--third:nth-child(2) {
   top: 0;
   right: 0;
@@ -924,7 +969,7 @@ footer p {
   clip-path: url(#triangle--quarter-vertical);
   animation: bgpos 20s infinite;
 }
-/* line 460, ../sass/_modules.sass */
+/* line 465, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--third:nth-child(3) {
   bottom: 0;
   left: 0;
@@ -934,7 +979,7 @@ footer p {
   clip-path: url(#triangle--quarter-horizontal);
   animation: bgpostop 30s infinite;
 }
-/* line 471, ../sass/_modules.sass */
+/* line 476, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--quarter:nth-child(1), .project-header__tile.project-header__tile--quarter:nth-child(3) {
   top: 0;
   right: 0;
@@ -944,7 +989,7 @@ footer p {
   clip-path: url(#triangle--quarter-vertical);
   animation: bgpos 20s infinite;
 }
-/* line 480, ../sass/_modules.sass */
+/* line 485, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--quarter:nth-child(2), .project-header__tile.project-header__tile--quarter:nth-child(4) {
   bottom: 0;
   left: 0;
@@ -954,14 +999,14 @@ footer p {
   clip-path: url(#triangle--quarter-horizontal);
   animation: bgpostop 30s infinite;
 }
-/* line 489, ../sass/_modules.sass */
+/* line 494, ../sass/_modules.sass */
 .project-header__tile.project-header__tile--quarter:nth-child(3), .project-header__tile.project-header__tile--quarter:nth-child(4) {
   top: 0;
   left: 0;
   transform: rotate(180deg);
 }
 
-/* line 494, ../sass/_modules.sass */
+/* line 499, ../sass/_modules.sass */
 .project-header__images {
   position: absolute;
   top: 0;
@@ -973,24 +1018,24 @@ footer p {
 }
 
 /* RELPAGES */
-/* line 504, ../sass/_modules.sass */
+/* line 509, ../sass/_modules.sass */
 .relpages-slide {
   width: 40vw !important;
   position: relative !important;
   padding: 0;
 }
-/* line 509, ../sass/_modules.sass */
+/* line 514, ../sass/_modules.sass */
 .relpages-slide .relpage__content {
   position: relative;
 }
-/* line 512, ../sass/_modules.sass */
+/* line 517, ../sass/_modules.sass */
 .relpages-slide .relpage__content .relpage__text {
   width: calc((100% / 12) * 7);
   position: relative;
   float: left;
   z-index: 2000;
 }
-/* line 518, ../sass/_modules.sass */
+/* line 523, ../sass/_modules.sass */
 .relpages-slide .relpage__content .relpage__image {
   width: calc((100% / 12) * 6);
   height: 100%;
@@ -1000,19 +1045,19 @@ footer p {
 }
 
 /* META */
-/* line 529, ../sass/_modules.sass */
+/* line 534, ../sass/_modules.sass */
 .involvements-items__content {
   display: flex;
 }
 
-/* line 532, ../sass/_modules.sass */
+/* line 537, ../sass/_modules.sass */
 .involvement-item {
   position: relative;
   width: 20%;
   margin-top: 30px;
   flex-grow: 1;
 }
-/* line 538, ../sass/_modules.sass */
+/* line 543, ../sass/_modules.sass */
 .involvement-item > .dot {
   width: 1px;
   height: 7px;
@@ -1024,7 +1069,7 @@ footer p {
   transform: translateY(-50%);
   z-index: 10;
 }
-/* line 549, ../sass/_modules.sass */
+/* line 554, ../sass/_modules.sass */
 .involvement-item > .line {
   width: calc(100% - 8px);
   height: 1px;
@@ -1034,73 +1079,85 @@ footer p {
   left: 4px;
   transform: translateY(-50%);
 }
-/* line 558, ../sass/_modules.sass */
+/* line 563, ../sass/_modules.sass */
 .involvement-item h4 {
   font: normal 1.2rem/1.6 "IBM Plex Mono", Helvetica, sans-serif;
   color: #787878;
 }
-/* line 564, ../sass/_modules.sass */
+/* line 569, ../sass/_modules.sass */
 .involvement-item--active > .dot, .involvement-item--active > .line {
   background: #1e1e1e;
 }
-/* line 567, ../sass/_modules.sass */
+/* line 572, ../sass/_modules.sass */
 .involvement-item--active > .line {
   height: 2px;
 }
-/* line 570, ../sass/_modules.sass */
+/* line 575, ../sass/_modules.sass */
 .involvement-item--active h4 {
   color: #1e1e1e;
 }
 
-/* line 573, ../sass/_modules.sass */
+/* line 578, ../sass/_modules.sass */
 .inverted > .meta__content > section > div > .involvement-item > .dot,
 .inverted > .meta__content > section > div > .involvement-item > .line {
   background: white;
   opacity: 0.5;
 }
 
-/* line 578, ../sass/_modules.sass */
+/* line 583, ../sass/_modules.sass */
 .inverted > .meta__content > section > div > .involvement-item--active > .dot,
 .inverted > .meta__content > section > div > .involvement-item--active > .line {
   background: white;
   opacity: 1;
 }
 
-/* line 583, ../sass/_modules.sass */
+/* line 588, ../sass/_modules.sass */
 .inverted {
   color: white;
 }
-/* line 586, ../sass/_modules.sass */
+/* line 591, ../sass/_modules.sass */
 .inverted .meta__content > section > div > .involvement-item > h4 {
   color: white;
   opacity: 0.5;
 }
-/* line 590, ../sass/_modules.sass */
+/* line 595, ../sass/_modules.sass */
 .inverted .meta__content > section > div > .involvement-item--active > h4 {
   color: white;
   opacity: 1;
 }
 
 /* ANIMATIONEN */
-/* line 6, ../sass/_overview-items.sass */
+@media screen and (max-width: 600px) {
+  /* line 7, ../sass/_overview-items.sass */
+  .item-overview__item h1 {
+    font-size: 30px !important;
+  }
+}
+/* line 10, ../sass/_overview-items.sass */
 .item-overview__item p {
   font: 500 2vw/1.2 "IBM Plex Sans", Times, serif;
   margin-bottom: 10px;
 }
-/* line 10, ../sass/_overview-items.sass */
+/* line 14, ../sass/_overview-items.sass */
 .item-overview__item p strong {
   font: 600 2vw/1.2 "IBM Plex Sans", Times, serif;
 }
-/* line 13, ../sass/_overview-items.sass */
+@media screen and (max-width: 600px) {
+  /* line 18, ../sass/_overview-items.sass */
+  .item-overview__item p {
+    font: 500 24px/1.2 "IBM Plex Sans", Times, serif;
+  }
+}
+/* line 21, ../sass/_overview-items.sass */
 .item-overview__item h4 {
   font: normal 1.7rem/1.6 "IBM Plex Mono", Helvetica, sans-serif;
 }
-/* line 16, ../sass/_overview-items.sass */
+/* line 24, ../sass/_overview-items.sass */
 .item-overview__item h2 {
   float: left;
   margin-top: 20px;
 }
-/* line 20, ../sass/_overview-items.sass */
+/* line 28, ../sass/_overview-items.sass */
 .item-overview__item input {
   float: right;
 }

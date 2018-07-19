@@ -21,7 +21,6 @@
 			var scrollPosition = $(window).scrollTop();
 			var percentage = 100 * $(window).scrollTop() / ($(document).height() - $(window).height()) /100;
 			var bgColor = 'rgba(125, 94, 77, ' + (percentage) + ')';
-			console.log(bgColor);
 			$('body').css('background-color', bgColor);
 			// $('header').css('background-color', bgColor);
 		}

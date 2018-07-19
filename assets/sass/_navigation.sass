@@ -18,15 +18,28 @@ header
 		grid-column-start: 9
 		grid-column-end: span line-13
 
+		@media screen and (max-width: 600px)
+			& 
+				grid-column-start: 6	
+
 		& .menu__item
 			align-self: center
 			
 			& a
-				font: 500 2vw/1.2 'IBM Plex Sans', Helvetica, serif
+				font: 500 2vw/1.2 'IBM Plex Sans', Helvetica, sans-serif !important
+
+				@media screen and (max-width: 600px)
+					& 
+						font: 500 16px/1.2 'IBM Plex Sans', Helvetica, sans-serif !important
 
 				&:hover, &:focus
 					border-bottom: 2px solid black
 					padding-bottom: 10px
+
+			@media screen and (max-width: 600px)
+				&.grid--span-6
+					grid-column-end: span 6
+
 
 
 footer
@@ -35,5 +48,13 @@ footer
 	padding: 20px 40px
 
 	& p
-		font: 500 1.2vw/1.2 'IBM Plex Mono', Helvetica, serif
+		font: 500 1.2vw/1.2 'IBM Plex Mono', Helvetica, sans-serif !important
 		margin: 0
+
+		@media screen and (max-width: 600px)
+			&
+				font: 500 16px/1.2 'IBM Plex Mono', Helvetica, sans-serif !important
+
+	@media screen and (max-width: 600px)
+		&
+			padding: 20px 20px
