@@ -11,8 +11,14 @@
 	  	<?= '<h1>'.$item->parent()->title().'</h1>' ?>
 		  <? e($item->text()->isNotEmpty(), '<p>'.$item->text()).'</p>' ?>
       <?= '<h4>Inhalt: '.$item->size().'</h4>' ?>
-      <?= '<h4>Noch '.$item->count()->value().' verfügbar.</h4>' ?>
-      <?= '<h2>Preis: '.$item->price()->value().'€ zzgl. Versand</h2>' ?>
-      <? snippet('items/product-form', ['product' => $item]) ?>
+      <? if($item->count()->value() == '0'): ?>
+				<?= '<h4>Nicht mehr vorrätig. Nachschub ist auf dem Weg.</h4>' ?>
+			<? else: ?>
+				<?= '<h4>Noch '.$item->count()->value().' verfügbar.</h4>' ?>
+      <? endif ?>
+			<?= '<h2>Preis: '.$item->price()->value().'€ zzgl. Versand</h2>' ?>
+      <? if($item->count()->value() != '0'): ?>
+	  		<? snippet('items/product-form', ['product' => $item]) ?>
+			<? endif ?>
 	 </div>
 </article>

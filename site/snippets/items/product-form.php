@@ -16,6 +16,6 @@
   <input type="hidden" name="shipping" value="4.00">
 
   <!-- Display the payment button. -->
-  <input type="submit" name="submit" value="Add to Cart" alt="Add to Cart">
+  <input type="submit" name="submit" value="Zum Warenkorb" alt="Zum Warenkorb">
   
 </form>
